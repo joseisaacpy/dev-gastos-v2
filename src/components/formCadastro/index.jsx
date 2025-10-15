@@ -7,8 +7,8 @@ import { useForm } from "react-hook-form";
 // Importa zod resolver
 import { zodResolver } from "@hookform/resolvers/zod";
 // Importa os componentes ui
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
+import { Input } from "../ui/input";
+import { Button } from "../ui/button";
 import {
   Form,
   FormField,
@@ -16,7 +16,7 @@ import {
   FormLabel,
   FormMessage,
   FormControl,
-} from "./ui/form";
+} from "../ui/form";
 
 export default function FormCadastro({
   type = "gasto",
@@ -95,7 +95,7 @@ export default function FormCadastro({
             <FormItem>
               <FormLabel className={"text-lg md:text-xl"}>Categoria:</FormLabel>
               <FormControl>
-                <Input {...field}  placeholder="Ex: Alimentação" />
+                <Input {...field} placeholder="Ex: Alimentação" />
               </FormControl>
               <FormMessage />
             </FormItem>
