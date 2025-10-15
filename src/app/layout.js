@@ -14,15 +14,23 @@ const poppins = localFont({
   variable: "--font-poppins",
 });
 
+// Meta dados
 export const metadata = {
   title: "Dev Gastos V2",
   description: "Sistema de controle de gastos",
 };
 
+// Importar sidebar
+import Sidebar from "@/components/sidebar";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+      <body className={`${poppins.className} antialiased`}>
+        {/* Sidebar */}
+        <Sidebar />
+        {children}
+      </body>
     </html>
   );
 }
