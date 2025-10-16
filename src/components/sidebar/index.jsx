@@ -62,7 +62,7 @@ export default function Sidebar() {
       </aside>
 
       {/* Menu mobile */}
-      <div className="md:hidden">
+      <div className="md:hidden border-b">
         <Sheet>
           {/* Botão que abre o menu */}
           <SheetTrigger>
