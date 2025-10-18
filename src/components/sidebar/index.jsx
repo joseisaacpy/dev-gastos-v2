@@ -35,7 +35,7 @@ export default function Sidebar() {
         {/* Perfil */}
         <figure className="mb-6">
           <Image
-            src="/images/image.png"
+            src="/images/user-profile.png"
             alt="Foto de perfil"
             width={40}
             height={40}
@@ -74,7 +74,7 @@ export default function Sidebar() {
               {/* Perfil */}
               <figure className="mb-6">
                 <Image
-                  src="/images/image.png"
+                  src="/images/user-profile.png"
                   alt="Foto de perfil"
                   width={40}
                   height={40}
