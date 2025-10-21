@@ -1,7 +1,13 @@
+// Importa a sessão
+import Provider from "@/components/SessionProvider";
+
 // Importa o CSS
 import "./globals.css";
 
-// Fonte
+// Importar sidebar
+import Sidebar from "@/components/sidebar";
+
+// Fonte local
 import localFont from "next/font/local";
 const poppins = localFont({
   src: [
@@ -20,17 +26,17 @@ export const metadata = {
   description: "Sistema de controle de gastos",
 };
 
-// Importar sidebar
-import Sidebar from "@/components/sidebar";
-
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body className={`${poppins.className} antialiased`}>
-        {/* Sidebar */}
-        <Sidebar />
-        {/* Conteúdo */}
-        <main className="md:ml-20">{children}</main>
+        {/* Provider */}
+        <Provider>
+          {/* Sidebar */}
+          <Sidebar />
+          {/* Conteúdo */}
+          <main className="md:ml-20">{children}</main>
+        </Provider>
       </body>
     </html>
   );
