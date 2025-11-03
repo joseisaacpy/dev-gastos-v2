@@ -1,5 +1,5 @@
 // Links
-import itemsNav from "@/utils/itemsNav";
+import itemsNav from "@/utils/itensNav";
 
 // Components ui
 import {

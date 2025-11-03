@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/tooltip";
 
 // Importar os links
-import itemsNav from "@/utils/itemsNav";
+import itemsNav from "@/utils/itensNav";
 
 // Icons
 import { MenuIcon } from "lucide-react";
